@@ -43,7 +43,7 @@
             Decolla.TabIndex = 0;
             Decolla.Text = "Decolla";
             Decolla.UseVisualStyleBackColor = true;
-            Decolla.Click += AggiungiAereo_Click;
+            Decolla.Click += Decolla_Click;
             // 
             // comboBox1
             // 

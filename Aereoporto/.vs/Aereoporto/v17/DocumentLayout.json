@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\stazionedicontrollo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\stazionedicontrollo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\aereo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\aereo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|c:\\users\\taiocchi.21206\\tps\\esercizioaereoporto\\aereoporto\\aereoporto\\aereo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D004887-6C90-4DEA-9FC6-C7509A64DB08}|Aereoporto\\Aereoporto.csproj|solutionrelative:aereoporto\\aereo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Form1.cs",
               "RelativeDocumentMoniker": "Aereoporto\\Form1.cs",
               "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Form1.cs",
               "RelativeToolTip": "Aereoporto\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwEkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T09:10:15.846Z",
               "IsPinned": true,
@@ -44,41 +44,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StazioneDiControllo.cs",
-              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\StazioneDiControllo.cs",
-              "RelativeDocumentMoniker": "Aereoporto\\StazioneDiControllo.cs",
-              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\StazioneDiControllo.cs",
-              "RelativeToolTip": "Aereoporto\\StazioneDiControllo.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwCgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T09:14:06.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Aereo.cs",
-              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Aereo.cs",
-              "RelativeDocumentMoniker": "Aereoporto\\Aereo.cs",
-              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Aereo.cs",
-              "RelativeToolTip": "Aereoporto\\Aereo.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA7wDUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T09:13:49.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form1.cs [Progettazione]",
               "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Form1.cs",
               "RelativeDocumentMoniker": "Aereoporto\\Form1.cs",
               "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Form1.cs [Progettazione]",
               "RelativeToolTip": "Aereoporto\\Form1.cs [Progettazione]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T09:09:55.737Z",
+              "WhenOpened": "2024-12-18T11:06:51.362Z",
               "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StazioneDiControllo.cs",
+              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\StazioneDiControllo.cs",
+              "RelativeDocumentMoniker": "Aereoporto\\StazioneDiControllo.cs",
+              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\StazioneDiControllo.cs",
+              "RelativeToolTip": "Aereoporto\\StazioneDiControllo.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwEcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T09:14:06.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Aereo.cs",
+              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Aereo.cs",
+              "RelativeDocumentMoniker": "Aereoporto\\Aereo.cs",
+              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\EsercizioAereoporto\\Aereoporto\\Aereoporto\\Aereo.cs",
+              "RelativeToolTip": "Aereoporto\\Aereo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T09:13:49.738Z",
+              "EditorCaption": ""
             }
           ]
         }

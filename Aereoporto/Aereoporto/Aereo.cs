@@ -46,17 +46,6 @@ namespace Aereoporto
             richiediDecollo = true;
         }
 
-        public void Operare(StazioneDiControllo stazione)
-        {
-            if (richiediAtterraggio)
-            {
-                stazione.RichiestaAtterraggio(this);
-            }
-            else if (richiediDecollo)
-            {
-                stazione.RichiestaDecollo(this);
-            }
-        }
         public Aereo(string modello, string marca)
         {
             this.modello = modello;

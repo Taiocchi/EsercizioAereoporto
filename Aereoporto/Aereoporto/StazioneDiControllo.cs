@@ -11,7 +11,7 @@ namespace Aereoporto
         private List<Aereo> listaDecollo = new List<Aereo>();
         private List<Aereo> listaAtterraggio = new List<Aereo>();
         private bool statoPista = false; //Se false allora pista libera, se true allora pista occupata
-
+        private readonly object lockObj = new object(); //Per far in modo che la pista sia occupato da un aereo alla volta
         public List<Aereo> ListaDecollo
         {
             get { return listaDecollo; }
@@ -29,41 +29,49 @@ namespace Aereoporto
 
         public void RichiestaAtterraggio(Aereo aereo)
         {
-            listaAtterraggio.Add(aereo);
+            if (!ListaDecollo.Contains(aereo) && aereo.RichiediAtterraggio)
+                listaAtterraggio.Add(aereo);
         }
         public void RichiestaDecollo(Aereo aereo)
         {
-            listaDecollo.Add(aereo);
+            if (!ListaDecollo.Contains(aereo) && aereo.RichiediDecollo)
+                listaDecollo.Add(aereo);
         }
 
         public void GestisciPista()
         {
-            if(statoPista == false)
+            while(true)
             {
-                if (listaAtterraggio.Count > 0)
+                lock(lockObj)
                 {
-                    Aereo aereoAtterraggio = listaAtterraggio[0]; // Prendi il primo elemento
-                    listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
-                    statoPista = true;
-                    MessageBox.Show("L'aereo sta atterrando");
-                    Thread.Sleep(2000);
-                    statoPista = false;
-                    MessageBox.Show("L'aereo è atterrato");
+                    if (statoPista == false)
+                    {
+                        if (listaAtterraggio.Count > 0)
+                        {
+                            Aereo aereoAtterraggio = listaAtterraggio[0]; // Prendi il primo elemento
+                            listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
+                            statoPista = true;
+                            MessageBox.Show("L'aereo "+ aereoAtterraggio.Nome +" asta atterrando");
+                            Thread.Sleep(5000);
+                            statoPista = false;
+                            MessageBox.Show("L'aereo "+ aereoAtterraggio.Nome +" è atterrato");
+                        }
+                        else if (listaDecollo.Count > 0)
+                        {
+                            Aereo aereoDecollo = listaDecollo[0]; // Prendi il primo elemento
+                            listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
+                            statoPista = true;
+                            MessageBox.Show("L'aereo "+ aereoDecollo.Nome +"  sta decollando");
+                            Thread.Sleep(5000);
+                            statoPista = false;
+                            MessageBox.Show("L'aereo "+ aereoDecollo.Nome +" è decollato");
+                        }
+                    }
+                    /*else if (statoPista == true)
+                    {
+                        MessageBox.Show("La pista è gia occupata");
+                    }*/
                 }
-                else if (listaDecollo.Count > 0)
-                {
-                    Aereo aereoDecollo = listaDecollo[0]; // Prendi il primo elemento
-                    listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
-                    statoPista = true;
-                    MessageBox.Show("L'aereo sta decollando");
-                    Thread.Sleep(2000);
-                    statoPista = false;
-                    MessageBox.Show("L'aereo è decollato");
-                }
-            }
-            else
-            {
-                MessageBox.Show("La pista è gia occupata");
             }
         }
 
