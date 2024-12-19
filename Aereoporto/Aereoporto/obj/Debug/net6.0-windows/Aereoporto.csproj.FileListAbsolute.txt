@@ -15,3 +15,20 @@ C:\Users\taiocchi.21206\TPS\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\
 C:\Users\taiocchi.21206\TPS\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.pdb
 C:\Users\taiocchi.21206\TPS\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.genruntimeconfig.cache
 C:\Users\taiocchi.21206\TPS\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\ref\Aereoporto.dll
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\bin\Debug\net6.0-windows\Aereoporto.exe
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\bin\Debug\net6.0-windows\Aereoporto.deps.json
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\bin\Debug\net6.0-windows\Aereoporto.runtimeconfig.json
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\bin\Debug\net6.0-windows\Aereoporto.dll
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\bin\Debug\net6.0-windows\Aereoporto.pdb
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.Form1.resources
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.csproj.GenerateResource.cache
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.AssemblyInfoInputs.cache
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.AssemblyInfo.cs
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.csproj.CoreCompileInputs.cache
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.sourcelink.json
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.dll
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\refint\Aereoporto.dll
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.pdb
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.genruntimeconfig.cache
+C:\Users\lucta\Desktop\INFORMATICA\Es bernini (C#)\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\ref\Aereoporto.dll

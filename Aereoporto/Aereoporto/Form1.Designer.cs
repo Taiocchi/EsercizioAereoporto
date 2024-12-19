@@ -33,6 +33,8 @@
             Atterra = new Button();
             ListaDecolli = new ListBox();
             ListaAtterraggi = new ListBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // Decolla
@@ -77,16 +79,36 @@
             // 
             ListaAtterraggi.FormattingEnabled = true;
             ListaAtterraggi.ItemHeight = 15;
-            ListaAtterraggi.Location = new Point(558, 208);
+            ListaAtterraggi.Location = new Point(558, 246);
             ListaAtterraggi.Name = "ListaAtterraggi";
             ListaAtterraggi.Size = new Size(120, 94);
             ListaAtterraggi.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(578, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(69, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Lista decolli";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(578, 226);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Lista atterraggi";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(ListaAtterraggi);
             Controls.Add(ListaDecolli);
             Controls.Add(Atterra);
@@ -96,6 +118,7 @@
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -105,5 +128,7 @@
         private Button Atterra;
         private ListBox ListaDecolli;
         private ListBox ListaAtterraggi;
+        private Label label1;
+        private Label label2;
     }
 }

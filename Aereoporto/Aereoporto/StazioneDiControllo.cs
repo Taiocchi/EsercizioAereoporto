@@ -49,22 +49,30 @@ namespace Aereoporto
                         if (listaAtterraggio.Count > 0)
                         {
                             Aereo aereoAtterraggio = listaAtterraggio[0]; // Prendi il primo elemento
-                            listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
                             statoPista = true;
-                            MessageBox.Show("L'aereo "+ aereoAtterraggio.Nome +" asta atterrando");
+
+                            MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " sta atterrando");
+
                             Thread.Sleep(5000);
                             statoPista = false;
-                            MessageBox.Show("L'aereo "+ aereoAtterraggio.Nome +" è atterrato");
+
+                            MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
+
+                            listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
                         }
                         else if (listaDecollo.Count > 0)
                         {
                             Aereo aereoDecollo = listaDecollo[0]; // Prendi il primo elemento
-                            listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
                             statoPista = true;
-                            MessageBox.Show("L'aereo "+ aereoDecollo.Nome +"  sta decollando");
+
+                            MessageBox.Show("L'aereo " + aereoDecollo.Nome + " sta decollando");
+
                             Thread.Sleep(5000);
                             statoPista = false;
-                            MessageBox.Show("L'aereo "+ aereoDecollo.Nome +" è decollato");
+
+                            MessageBox.Show("L'aereo " + aereoDecollo.Nome + " è decollato");
+
+                            listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
                         }
                     }
                     /*else if (statoPista == true)

@@ -7,11 +7,11 @@ namespace Aereoporto
     public partial class Form1 : Form
     {
         private Thread controllo;
-        private readonly StazioneDiControllo stazione = new StazioneDiControllo();
-
+        private StazioneDiControllo stazione = new StazioneDiControllo(); 
         public Form1()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
             controllo = new Thread(() => stazione.GestisciPista());
             controllo.Start(); // Avvia il thread di gestione della pista
         }
@@ -38,13 +38,8 @@ namespace Aereoporto
             Aereo aereo = new Aereo(Modello, Marca);
             aereo.RichiestaDecollo();
 
-            Thread threadAereo = new Thread(() =>
-            {
-                stazione.RichiestaDecollo(aereo);
-                AggiornaInterfaccia(); // Usa Invoke per aggiornare la UI nel thread principale
-            });
-
-            threadAereo.Start();
+            stazione.RichiestaDecollo(aereo);
+            AggiornaInterfaccia();
         }
 
         private void Atterra_Click(object sender, EventArgs e)
@@ -65,13 +60,8 @@ namespace Aereoporto
             Aereo aereo = new Aereo(Modello, Marca);
             aereo.RichiestaAtterraggio();
 
-            Thread threadAereo = new Thread(() =>
-            {
-                stazione.RichiestaAtterraggio(aereo);
-                AggiornaInterfaccia(); // Usa Invoke per aggiornare la UI nel thread principale
-            });
-
-            threadAereo.Start();
+            stazione.RichiestaAtterraggio(aereo);
+            AggiornaInterfaccia();
         }
 
         // Metodo per aggiornare la UI. Usa Invoke per garantire che l'aggiornamento avvenga nel thread principale
