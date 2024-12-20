@@ -12,6 +12,9 @@ namespace Aereoporto
         private List<Aereo> listaAtterraggio = new List<Aereo>();
         private bool statoPista = false; //Se false allora pista libera, se true allora pista occupata
         private readonly object lockObj = new object(); //Per far in modo che la pista sia occupato da un aereo alla volta
+
+        private Form1 form;
+
         public List<Aereo> ListaDecollo
         {
             get { return listaDecollo; }
@@ -59,6 +62,8 @@ namespace Aereoporto
                             MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
 
                             listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
+
+                            form.AggiornaInterfaccia();
                         }
                         else if (listaDecollo.Count > 0)
                         {
@@ -73,19 +78,17 @@ namespace Aereoporto
                             MessageBox.Show("L'aereo " + aereoDecollo.Nome + " è decollato");
 
                             listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
+
+                            form.AggiornaInterfaccia();
                         }
                     }
-                    /*else if (statoPista == true)
-                    {
-                        MessageBox.Show("La pista è gia occupata");
-                    }*/
                 }
             }
         }
 
-        public StazioneDiControllo()
+        public StazioneDiControllo(Form1 form)
         {
-            
+            this.form = form;
         }
     }
 }

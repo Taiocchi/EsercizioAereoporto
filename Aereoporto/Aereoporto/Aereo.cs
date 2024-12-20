@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aereoporto
 {
-    class Aereo
+    public class Aereo
     {
         private string marca;
         private string modello;

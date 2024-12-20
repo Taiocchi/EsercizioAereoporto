@@ -72,7 +72,7 @@
             ListaDecolli.ItemHeight = 15;
             ListaDecolli.Location = new Point(558, 63);
             ListaDecolli.Name = "ListaDecolli";
-            ListaDecolli.Size = new Size(120, 94);
+            ListaDecolli.Size = new Size(158, 94);
             ListaDecolli.TabIndex = 4;
             // 
             // ListaAtterraggi
@@ -81,13 +81,13 @@
             ListaAtterraggi.ItemHeight = 15;
             ListaAtterraggi.Location = new Point(558, 246);
             ListaAtterraggi.Name = "ListaAtterraggi";
-            ListaAtterraggi.Size = new Size(120, 94);
+            ListaAtterraggi.Size = new Size(158, 94);
             ListaAtterraggi.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(578, 45);
+            label1.Location = new Point(590, 45);
             label1.Name = "label1";
             label1.Size = new Size(69, 15);
             label1.TabIndex = 6;
@@ -96,7 +96,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(578, 226);
+            label2.Location = new Point(590, 226);
             label2.Name = "label2";
             label2.Size = new Size(85, 15);
             label2.TabIndex = 7;
