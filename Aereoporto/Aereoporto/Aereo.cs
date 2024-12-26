@@ -46,7 +46,7 @@ namespace Aereoporto
             richiediDecollo = true;
         }
 
-        public Aereo(string modello, string marca)
+        public Aereo(string marca, string modello)
         {
             this.modello = modello;
             this.marca = marca;

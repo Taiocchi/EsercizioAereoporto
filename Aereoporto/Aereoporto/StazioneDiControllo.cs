@@ -59,11 +59,13 @@ namespace Aereoporto
                             Thread.Sleep(5000);
                             statoPista = false;
 
-                            MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
+                           MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
 
                             listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
 
                             form.AggiornaInterfaccia();
+
+                            form.AggiungiComboBox(aereoAtterraggio.Nome);
                         }
                         else if (listaDecollo.Count > 0)
                         {
@@ -80,6 +82,8 @@ namespace Aereoporto
                             listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
 
                             form.AggiornaInterfaccia();
+
+                            form.AggiungiComboBox(aereoDecollo.Nome);
                         }
                     }
                 }

@@ -28,12 +28,12 @@ namespace Aereoporto
 
             string selezionato = comboBox1.SelectedItem.ToString();
             string[] dati = selezionato.Split(" - ");
-            string Modello = dati[0];
-            string Marca = dati[1];
+            string Marca = dati[0];
+            string Modello = dati[1];
 
-            comboBox1.Items.Remove(selezionato);
+            comboBox1.Items.Remove(selezionato); 
 
-            Aereo aereo = new Aereo(Modello, Marca);
+            Aereo aereo = new Aereo(Marca, Modello);
             aereo.RichiestaDecollo();
 
             stazione.RichiestaDecollo(aereo);
@@ -59,12 +59,12 @@ namespace Aereoporto
 
             string selezionato = comboBox1.SelectedItem.ToString();
             string[] dati = selezionato.Split(" - ");
-            string Modello = dati[0];
-            string Marca = dati[1];
+            string Marca = dati[0];
+            string Modello = dati[1];
 
             comboBox1.Items.Remove(selezionato);
 
-            Aereo aereo = new Aereo(Modello, Marca);
+            Aereo aereo = new Aereo(Marca, Modello);
             aereo.RichiestaAtterraggio();
 
             stazione.RichiestaAtterraggio(aereo);
@@ -79,10 +79,11 @@ namespace Aereoporto
             AggiornaInterfaccia();
         }
 
-        public void prova(Aereo aereo2)
+        public void AggiungiComboBox(string stringa)
         {
-            
+            comboBox1.Items.Add(stringa);
         }
+
         // Metodo per aggiornare la UI. Usa Invoke per garantire che l'aggiornamento avvenga nel thread principale
         public void AggiornaInterfaccia()
         {
