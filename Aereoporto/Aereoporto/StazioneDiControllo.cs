@@ -56,7 +56,13 @@ namespace Aereoporto
 
                             MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " sta atterrando");
 
-                            Thread.Sleep(5000);
+                            form.PosizioneInizialeAtterraggio(aereoAtterraggio.Nome);
+                            for(int i = 1; i < 5; i++)
+                            {
+                                Thread.Sleep(1000);
+                                form.SpostaImmaggineAtterraggio();
+                            }
+                            
                             statoPista = false;
 
                            MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
@@ -74,7 +80,13 @@ namespace Aereoporto
 
                             MessageBox.Show("L'aereo " + aereoDecollo.Nome + " sta decollando");
 
-                            Thread.Sleep(5000);
+                            form.PosizioneInizialeDecollo(aereoDecollo.Nome);
+                            for (int i = 1; i < 5; i++)
+                            {
+                                Thread.Sleep(1000);
+                                form.SpostaImmaggineDecollo();
+                            }
+
                             statoPista = false;
 
                             MessageBox.Show("L'aereo " + aereoDecollo.Nome + " è decollato");

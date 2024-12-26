@@ -31,7 +31,7 @@ namespace Aereoporto
             string Marca = dati[0];
             string Modello = dati[1];
 
-            comboBox1.Items.Remove(selezionato); 
+            comboBox1.Items.Remove(selezionato);
 
             Aereo aereo = new Aereo(Marca, Modello);
             aereo.RichiestaDecollo();
@@ -43,7 +43,6 @@ namespace Aereoporto
                 stazione.GestisciPista();
                 AggiornaInterfaccia();
             });
-
 
             threadAereo.Start();
             AggiornaInterfaccia();
@@ -82,6 +81,34 @@ namespace Aereoporto
         public void AggiungiComboBox(string stringa)
         {
             comboBox1.Items.Add(stringa);
+        }
+        public void SpostaImmaggineAtterraggio()
+        {
+            pictureBox1.Top += 20;
+            pictureBox1.Left += 20;
+
+            label3.Top += 20;
+            label3. Left += 20;
+        }
+        public void SpostaImmaggineDecollo()
+        {
+            pictureBox1.Top -= 19;
+            pictureBox1.Left += 20;
+
+            label3.Top -= 19;
+            label3.Left += 20;
+        }
+        public void PosizioneInizialeAtterraggio(string stringa)
+        {
+            pictureBox1.Location = new Point(318, 157);
+            label3.Location = new Point(431, 178);
+            label3.Text = stringa;
+        }
+        public void PosizioneInizialeDecollo(string stringa)
+        {
+            pictureBox1.Location = new Point(437, 229);
+            label3.Location = new Point(564, 252);
+            label3.Text = stringa;
         }
 
         // Metodo per aggiornare la UI. Usa Invoke per garantire che l'aggiornamento avvenga nel thread principale

@@ -66,3 +66,4 @@ C:\Users\lucta\Desktop\TPS\C#\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debu
 C:\Users\lucta\Desktop\TPS\C#\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.pdb
 C:\Users\lucta\Desktop\TPS\C#\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.genruntimeconfig.cache
 C:\Users\lucta\Desktop\TPS\C#\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\ref\Aereoporto.dll
+C:\Users\lucta\Desktop\TPS\C#\EsercizioAereoporto\Aereoporto\Aereoporto\obj\Debug\net6.0-windows\Aereoporto.Properties.Resources.resources
