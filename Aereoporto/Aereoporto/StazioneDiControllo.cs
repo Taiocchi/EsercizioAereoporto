@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aereoporto
 {
-    class StazioneDiControllo
+    public class StazioneDiControllo
     {
         private List<Aereo> listaDecollo = new List<Aereo>();
         private List<Aereo> listaAtterraggio = new List<Aereo>();
@@ -52,9 +52,9 @@ namespace Aereoporto
                         Aereo aereoAtterraggio = listaAtterraggio[0]; // Prendi il primo elemento
                         statoPista = true;
 
-                        if (aereoAtterraggio != null) MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " sta atterrando");
+                        MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " sta atterrando");
 
-                        if (aereoAtterraggio != null) form.PosizioneInizialeAtterraggio(aereoAtterraggio.Nome);
+                        form.PosizioneInizialeAtterraggio(aereoAtterraggio.Nome);
 
                         for (int i = 1; i < 5; i++)
                         {
@@ -64,27 +64,22 @@ namespace Aereoporto
 
                         statoPista = false;
 
-                        if (aereoAtterraggio != null) MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
+                        MessageBox.Show("L'aereo " + aereoAtterraggio.Nome + " è atterrato");
 
                         listaAtterraggio.RemoveAt(0); // Rimuovi il primo elemento
 
                         form.AggiornaInterfaccia();
 
-                        if (aereoAtterraggio != null) form.AggiungiComboBox(aereoAtterraggio.Nome);
+                        form.AggiungiComboBox(aereoAtterraggio.Nome);
                     }
                     else if (listaDecollo.Count > 0)
                     {
-                        foreach (Aereo a in listaDecollo)
-                        {
-                            MessageBox.Show(a.Nome);
-                        }
-
                         Aereo aereoDecollo = listaDecollo[0]; // Prendi il primo elemento
                         statoPista = true;
 
-                        if (aereoDecollo != null) MessageBox.Show("L'aereo " + aereoDecollo.Nome + " sta decollando");
+                        MessageBox.Show("L'aereo " + aereoDecollo.Nome + " sta decollando");
 
-                        if (aereoDecollo != null) form.PosizioneInizialeDecollo(aereoDecollo.Nome);
+                        form.PosizioneInizialeDecollo(aereoDecollo.Nome);
 
                         for (int i = 1; i < 5; i++)
                         {
@@ -94,13 +89,13 @@ namespace Aereoporto
 
                         statoPista = false;
 
-                        if (aereoDecollo != null) MessageBox.Show("L'aereo " + aereoDecollo.Nome + " è decollato");
+                        MessageBox.Show("L'aereo " + aereoDecollo.Nome + " è decollato");
 
                         listaDecollo.RemoveAt(0); // Rimuovi il primo elemento
 
                         form.AggiornaInterfaccia();
 
-                        if (aereoDecollo != null) form.AggiungiComboBox(aereoDecollo.Nome);
+                        form.AggiungiComboBox(aereoDecollo.Nome);
                     }
                 }
             }

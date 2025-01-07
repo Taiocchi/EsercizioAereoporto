@@ -13,7 +13,7 @@ namespace Aereoporto
         private bool richiediAtterraggio = false;
         private bool richiediDecollo = false;
         private string nome;
-
+        StazioneDiControllo stazione;
 
         public string Modello
         {
@@ -40,19 +40,21 @@ namespace Aereoporto
         public void RichiestaAtterraggio()
         {
             richiediAtterraggio = true;
+            stazione.RichiestaAtterraggio(this);
 
         }
 
         public void RichiestaDecollo()
         {
             richiediDecollo = true;
+            stazione.RichiestaDecollo(this);
         }
 
-        public Aereo(string marca, string modello)
+        public Aereo(string marca, string modello, StazioneDiControllo stazione)
         {
             this.modello = modello;
             this.marca = marca;
-
+            this.stazione = stazione;
             nome = marca + " - " + modello;
         }
     }

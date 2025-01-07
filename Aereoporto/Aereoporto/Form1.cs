@@ -12,6 +12,9 @@ namespace Aereoporto
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
             stazione = new StazioneDiControllo(this);
+
+            StilePulsanti(Decolla);
+            StilePulsanti(Atterra);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,10 +36,8 @@ namespace Aereoporto
 
             comboBox1.Items.Remove(selezionato);
 
-            Aereo aereo = new Aereo(Marca, Modello);
+            Aereo aereo = new Aereo(Marca, Modello, stazione);
             aereo.RichiestaDecollo();
-
-            stazione.RichiestaDecollo(aereo);
 
             Thread threadStazione = new Thread(() =>
             {
@@ -63,10 +64,8 @@ namespace Aereoporto
 
             comboBox1.Items.Remove(selezionato);
 
-            Aereo aereo = new Aereo(Marca, Modello);
+            Aereo aereo = new Aereo(Marca, Modello, stazione);
             aereo.RichiestaAtterraggio();
-
-            stazione.RichiestaAtterraggio(aereo);
 
             Thread threadStazione = new Thread(() =>
             {
@@ -109,6 +108,14 @@ namespace Aereoporto
             pictureBox1.Location = new Point(437, 229);
             label3.Location = new Point(564, 252);
             label3.Text = stringa;
+        }
+        private void StilePulsanti(Button button)
+        {
+            button.FlatStyle = FlatStyle.Flat;
+            button.BackColor = Color.LightBlue;
+            button.ForeColor = Color.White;
+            button.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            button.FlatAppearance.BorderSize = 0;
         }
 
         // Metodo per aggiornare la UI. Usa Invoke per garantire che l'aggiornamento avvenga nel thread principale
