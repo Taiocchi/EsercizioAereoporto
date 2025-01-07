@@ -14,6 +14,7 @@ namespace Aereoporto
         private bool richiediDecollo = false;
         private string nome;
 
+
         public string Modello
         {
             get { return modello; }
@@ -39,8 +40,9 @@ namespace Aereoporto
         public void RichiestaAtterraggio()
         {
             richiediAtterraggio = true;
+
         }
-        
+
         public void RichiestaDecollo()
         {
             richiediDecollo = true;

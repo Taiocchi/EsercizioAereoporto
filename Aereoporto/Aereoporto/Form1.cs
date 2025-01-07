@@ -38,13 +38,13 @@ namespace Aereoporto
 
             stazione.RichiestaDecollo(aereo);
 
-            Thread threadAereo = new Thread(() =>
+            Thread threadStazione = new Thread(() =>
             {
                 stazione.GestisciPista();
                 AggiornaInterfaccia();
             });
 
-            threadAereo.Start();
+            threadStazione.Start();
             AggiornaInterfaccia();
         }
 
@@ -68,13 +68,13 @@ namespace Aereoporto
 
             stazione.RichiestaAtterraggio(aereo);
 
-            Thread threadAereo = new Thread(() =>
+            Thread threadStazione = new Thread(() =>
             {
                 stazione.GestisciPista();
                 AggiornaInterfaccia();
             });
 
-            threadAereo.Start();
+            threadStazione.Start();
             AggiornaInterfaccia();
         }
 
@@ -88,7 +88,7 @@ namespace Aereoporto
             pictureBox1.Left += 20;
 
             label3.Top += 20;
-            label3. Left += 20;
+            label3.Left += 20;
         }
         public void SpostaImmaggineDecollo()
         {
