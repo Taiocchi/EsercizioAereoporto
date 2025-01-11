@@ -39,13 +39,13 @@ namespace Aereoporto
             Aereo aereo = new Aereo(Marca, Modello, stazione);
             aereo.RichiestaDecollo();
 
-            Thread threadStazione = new Thread(() =>
+            Thread thread = new Thread(() =>
             {
                 stazione.GestisciPista();
                 AggiornaInterfaccia();
             });
 
-            threadStazione.Start();
+            thread.Start();
             AggiornaInterfaccia();
         }
 
@@ -67,13 +67,13 @@ namespace Aereoporto
             Aereo aereo = new Aereo(Marca, Modello, stazione);
             aereo.RichiestaAtterraggio();
 
-            Thread threadStazione = new Thread(() =>
+            Thread thread = new Thread(() =>
             {
                 stazione.GestisciPista();
                 AggiornaInterfaccia();
             });
 
-            threadStazione.Start();
+            thread.Start();
             AggiornaInterfaccia();
         }
 

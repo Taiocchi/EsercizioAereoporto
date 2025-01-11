@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aereoporto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+146475134031dc712057ad8e11aa58abba23f37f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b14b893533406c4165f655e17622242c6071c6f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aereoporto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aereoporto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
